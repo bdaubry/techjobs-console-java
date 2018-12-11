@@ -76,7 +76,7 @@ public class JobData {
 
             String aValue = row.get(column);
 
-            if (aValue.contains(value)) {
+            if (aValue.toLowerCase().contains(value.toLowerCase())) {
                 jobs.add(row);
             }
         }
@@ -97,7 +97,7 @@ public class JobData {
                 j++;
             }
             for (int i = 0; i < job.size(); i++) {
-                if(job.get(jobKeys[i]).contains(value)){
+                if(job.get(jobKeys[i]).toLowerCase().contains(value.toLowerCase())){
                     jobs.add(job);
                     break;
                 }

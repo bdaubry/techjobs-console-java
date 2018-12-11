@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
+
 /**
  * Created by LaunchCode
  */
@@ -111,6 +113,10 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
+        for (HashMap<String, String> job : someJobs){
+            System.out.println(job);
+        }
         System.out.println("printJobs is not implemented yet");
+        System.out.println();
     }
 }
